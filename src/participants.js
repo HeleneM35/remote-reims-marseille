@@ -46,7 +46,7 @@ const studentsReims = [
 // Comment représenter cette donnée ?
 
 // représenter le jeton par un nombre
-const token = 1;
+// const token = 1;
 
 // construire le tableau de participants de façon dynamique
 // gràce à une fonction

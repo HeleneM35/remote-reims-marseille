@@ -15,13 +15,16 @@ import participants from "./participants";
 //importer les particpants
 
 function ParticipantList() {
-  // console.log(participants);
   return (
+  //console.log(participants); s'affiche dans la console du navigateur
     <ul>
-      <Participant name="Anaïs" hasToken={true} />
-      <Participant name="Angélique" hasToken={false} />
-    </ul>
-  );
+      {participants.map(participant => {
+        // console.log(participant.name)
+        return <Participant key={participant.name} name={participant.name} hasToken={participant.hasToken}/>
+      })}
+    </ul>)
 }
 
 export default ParticipantList;
+
+//{name} et {hasToken} ne sont pas reconnus car ces props ne sont pas déclarées dans ce composant
